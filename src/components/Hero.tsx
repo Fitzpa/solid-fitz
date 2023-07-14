@@ -1,20 +1,75 @@
 const CompaniesWorkedWith = [
-  { name: 'When I Work', href: '/', logo: '/when-i-work-logo.svg' },
-  { name: 'SPACE150', href: '/about', logo: '/when-i-work-logo.svg' },
-  { name: 'Nike', href: '#', logo: '/when-i-work-logo.svg' },
-  { name: 'Cargill', href: '#', logo: '/when-i-work-logo.svg' },
-  { name: '3M', href: '#', logo: '/when-i-work-logo.svg' },
+  {
+    name: 'When I Work',
+    href: '/',
+    logo: '/when-i-work-logo.svg',
+    width: '200',
+    height: '64',
+    lightBg: true,
+  },
+  {
+    name: 'SPACE150',
+    href: '/about',
+    logo: '/space-logo.jpg',
+    width: '190',
+    height: '83',
+    lightBg: false,
+  },
+  {
+    name: 'Nike',
+    href: '#',
+    logo: '/nike-logo.svg',
+    width: '150',
+    height: '75',
+    lightBg: true,
+  },
+  {
+    name: 'Cargill',
+    href: '#',
+    logo: '/cargill-logo.svg',
+    width: '140',
+    height: '81',
+    lightBg: true,
+  },
+  {
+    name: '3M',
+    href: '#',
+    logo: '/3M-logo.svg',
+    width: '120',
+    height: '79',
+    lightBg: true,
+  },
   {
     name: 'Phillips Distilling Company',
     href: '#',
-    logo: '/when-i-work-logo.svg',
+    logo: '/phillips-logo.png',
+    width: '150',
+    height: '93',
+    lightBg: true,
   },
-  { name: 'Tom Sachs', href: '#', logo: '/when-i-work-logo.svg' },
-  { name: 'WP Engine', href: '#', logo: '/when-i-work-logo.svg' },
+  {
+    name: 'Tom Sachs',
+    href: '#',
+    logo: '/tom-sachs-logo.svg',
+    width: '180',
+    height: '64',
+    lightBg: true,
+  },
+  {
+    name: 'WP Engine',
+    href: '#',
+    logo: '/WPE-LOGO-H-Inverse.svg',
+    width: '250',
+    height: '66',
+    lightBg: false,
+  },
   {
     name: 'Science Museum of Minnesota',
     href: '#',
-    logo: '/when-i-work-logo.svg',
+    logo: '/science-museum-of-minnesota.svg',
+    width: '200',
+    height: '95',
+    lightBg: false,
   },
 ]
 
@@ -39,14 +94,14 @@ const Hero = () => {
         </div>
         <div class="py-24 sm:py-32 lg:pb-40">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl text-left">
-              <h1 class="text-6xl font-bold text-left text-white sm:text-7xl md:text-8xl lg:text-9xl">
+            <div class="mx-auto max-w-4xl text-left">
+              <h1 class="w-min max-w-fit ml-auto text-6xl font-bold text-left text-white sm:text-7xl md:text-8xl lg:text-9xl">
                 Louie Fitzpatrick
               </h1>
-              <p class="ml-2 mt-6 text-lg leading-8 text-gray-300">
+              <p class="ml-2 mt-6 text-lg leading-8 text-gray-300 text-center">
                 Software Engineer
               </p>
-              <div class="mt-10 flex items-center justify-center gap-x-6">
+              <div class="mt-10 flex items-center justify-end gap-x-6">
                 <a
                   href="#"
                   class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
@@ -61,60 +116,27 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <ul
-          role="list"
-          class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {CompaniesWorkedWith.map((company) => (
-            <li class="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow">
-              <div class="flex w-full items-center justify-between space-x-6 p-6">
-                <div class="flex-1 truncate">
-                  <div class="flex items-center space-x-3">
-                    <h3 class="truncate text-sm font-medium text-gray-900">
-                      {company.name}
-                    </h3>
-                    {/* <span class="inline-flex flex-shrink-0 items-center rounded-full bg-green-50 px-1.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
-                      {company.role}
-                    </span> */}
-                  </div>
-                  {/* <p class="mt-1 truncate text-sm text-gray-500">
-                    {company.title}
-                  </p> */}
+        <div class="w-full flex justify-center items-center">
+          <ul
+            role="list"
+            class="mx-auto mt-10 flex gap-8 flex-row flex-wrap w-full max-w-lg justify-center items-center sm:max-w-xl lg:mx-0 lg:max-w-none">
+            {CompaniesWorkedWith.map((company) => (
+              <li class={`max-h-[${company.height}] object-contain rounded-lg`}>
+                <div class="flex justify-center">
+                  <img
+                    class={`p-4 rounded-lg ${
+                      company.lightBg ? 'bg-white' : 'bg-black'
+                    }`}
+                    src={company.logo}
+                    alt={company.name}
+                    width={company.width + 'px'}
+                    height={company.height + 'px'}
+                  />
                 </div>
-                <img
-                  class="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300"
-                  src={company.logo}
-                  alt={company.name}
-                />
-              </div>
-              <div>
-                <div class="-mt-px flex divide-x divide-gray-200">
-                  <div class="flex w-0 flex-1">
-                    <a
-                      href={`mailto:${person.email}`}
-                      class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
-                      <EnvelopeIcon
-                        class="h-5 w-5 text-gray-400"
-                        aria-hidden="true"
-                      />
-                      Email
-                    </a>
-                  </div>
-                  <div class="-ml-px flex w-0 flex-1">
-                    <a
-                      href={`tel:${person.telephone}`}
-                      class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
-                      <PhoneIcon
-                        class="h-5 w-5 text-gray-400"
-                        aria-hidden="true"
-                      />
-                      Call
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div
         class="absolute inset-x-0 left-[calc(100%-20rem)] top-[calc(100%-5rem)] w-[400px] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
