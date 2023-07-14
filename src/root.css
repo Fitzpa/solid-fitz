@@ -16,3 +16,6 @@
 *{
   font-family: 'BerkaLight';
 }
+body {
+  max-width: 90rem;
+}
