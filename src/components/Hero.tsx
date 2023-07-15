@@ -3,7 +3,7 @@ const CompaniesWorkedWith = [
     name: 'When I Work',
     href: '/',
     logo: '/when-i-work-logo.svg',
-    width: '200',
+    width: '250',
     height: '64',
     lightBg: true,
   },
@@ -11,15 +11,15 @@ const CompaniesWorkedWith = [
     name: 'SPACE150',
     href: '/about',
     logo: '/space-logo.jpg',
-    width: '190',
-    height: '83',
+    width: '250',
+    height: '95',
     lightBg: false,
   },
   {
     name: 'Nike',
     href: '#',
     logo: '/nike-logo.svg',
-    width: '150',
+    width: '250',
     height: '75',
     lightBg: true,
   },
@@ -27,7 +27,7 @@ const CompaniesWorkedWith = [
     name: 'Cargill',
     href: '#',
     logo: '/cargill-logo.svg',
-    width: '140',
+    width: '250',
     height: '81',
     lightBg: true,
   },
@@ -35,15 +35,15 @@ const CompaniesWorkedWith = [
     name: '3M',
     href: '#',
     logo: '/3M-logo.svg',
-    width: '120',
-    height: '79',
+    width: '250',
+    height: '95',
     lightBg: true,
   },
   {
     name: 'Phillips Distilling Company',
     href: '#',
     logo: '/phillips-logo.png',
-    width: '150',
+    width: '250',
     height: '93',
     lightBg: true,
   },
@@ -51,7 +51,7 @@ const CompaniesWorkedWith = [
     name: 'Tom Sachs',
     href: '#',
     logo: '/tom-sachs-logo.svg',
-    width: '180',
+    width: '250',
     height: '64',
     lightBg: true,
   },
@@ -60,14 +60,14 @@ const CompaniesWorkedWith = [
     href: '#',
     logo: '/WPE-LOGO-H-Inverse.svg',
     width: '250',
-    height: '66',
+    height: '95',
     lightBg: false,
   },
   {
     name: 'Science Museum of Minnesota',
     href: '#',
     logo: '/science-museum-of-minnesota.svg',
-    width: '200',
+    width: '250',
     height: '95',
     lightBg: false,
   },
@@ -121,8 +121,8 @@ const Hero = () => {
             role="list"
             class="mx-auto mt-10 flex gap-8 flex-row flex-wrap w-full max-w-lg justify-center items-center sm:max-w-xl lg:mx-0 lg:max-w-none">
             {CompaniesWorkedWith.map((company) => (
-              <li class={`max-h-[${company.height}] object-contain rounded-lg`}>
-                <div class="flex justify-center">
+              <li class={`object-contain rounded-lg`}>
+                <div class="flex justify-center h-[95px] w-[250px]">
                   <img
                     class={`p-4 rounded-lg ${
                       company.lightBg ? 'bg-white' : 'bg-black'
