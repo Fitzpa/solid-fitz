@@ -1,94 +1,21 @@
-const CompaniesWorkedWith = [
-  {
-    name: 'When I Work',
-    href: '/',
-    logo: '/when-i-work-logo.svg',
-    width: '250',
-    height: '64',
-    lightBg: true,
-  },
-  {
-    name: 'SPACE150',
-    href: '/about',
-    logo: '/space-logo.jpg',
-    width: '250',
-    height: '95',
-    lightBg: false,
-  },
-  {
-    name: 'Nike',
-    href: '#',
-    logo: '/nike-logo.svg',
-    width: '250',
-    height: '75',
-    lightBg: true,
-  },
-  {
-    name: 'Cargill',
-    href: '#',
-    logo: '/cargill-logo.svg',
-    width: '250',
-    height: '81',
-    lightBg: true,
-  },
-  {
-    name: '3M',
-    href: '#',
-    logo: '/3M-logo.svg',
-    width: '250',
-    height: '95',
-    lightBg: true,
-  },
-  {
-    name: 'Phillips Distilling Company',
-    href: '#',
-    logo: '/phillips-logo.png',
-    width: '250',
-    height: '93',
-    lightBg: true,
-  },
-  {
-    name: 'Tom Sachs',
-    href: '#',
-    logo: '/tom-sachs-logo.svg',
-    width: '250',
-    height: '64',
-    lightBg: true,
-  },
-  {
-    name: 'WP Engine',
-    href: '#',
-    logo: '/WPE-LOGO-H-Inverse.svg',
-    width: '250',
-    height: '95',
-    lightBg: false,
-  },
-  {
-    name: 'Science Museum of Minnesota',
-    href: '#',
-    logo: '/science-museum-of-minnesota.svg',
-    width: '250',
-    height: '95',
-    lightBg: false,
-  },
-]
+import WorkLogoList from './WorkLogoList'
 
 const Hero = () => {
   return (
-    <div class="relative isolate bg-[#121120] min-h-screen">
+    <section class="relative isolate bg-[#121120] min-h-screen px-8 sm:px-20 mb-24">
       <div class="relative pt-14 h-full">
         <div
-          class="absolute rounded-full inset-x-0 -z-10 w-[400px] transform-gpu overflow-hidden blur-3xl sm:top-[8rem]"
+          class="absolute rounded-full inset-x-0 -z-10 w-[800px] transform-gpu overflow-hidden blur-3xl left-[-8rem] sm:top-[8rem]"
           aria-hidden="true">
           <svg
-            height="400"
-            width="400"
-            class="relative bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20">
+            height="800"
+            width="800"
+            class="cloud-gradient blur-3xl opacity-60 overflow-hidden">
             <circle
-              cx="200"
-              cy="200"
-              r="150"
-              style="fill:white;"
+              cx="400"
+              cy="400"
+              r="100"
+              style="fill:transparent;"
             />
           </svg>
         </div>
@@ -116,27 +43,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div class="w-full flex justify-center items-center">
-          <ul
-            role="list"
-            class="mx-auto mt-10 flex gap-8 flex-row flex-wrap w-full max-w-lg justify-center items-center sm:max-w-xl lg:mx-0 lg:max-w-none">
-            {CompaniesWorkedWith.map((company) => (
-              <li class={`object-contain rounded-lg`}>
-                <div class="flex justify-center h-[95px] w-[250px]">
-                  <img
-                    class={`p-4 rounded-lg ${
-                      company.lightBg ? 'bg-white' : 'bg-black'
-                    }`}
-                    src={company.logo}
-                    alt={company.name}
-                    width={company.width + 'px'}
-                    height={company.height + 'px'}
-                  />
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <WorkLogoList />
       </div>
       <div
         class="absolute inset-x-0 left-[calc(100%-20rem)] top-[calc(100%-5rem)] w-[400px] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -153,7 +60,7 @@ const Hero = () => {
           />
         </svg>
       </div>
-    </div>
+    </section>
   )
 }
 
