@@ -22,7 +22,7 @@ const Hero = () => {
         <div class="py-24 sm:py-32 lg:pb-40">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-4xl text-left">
-              <h1 class="w-min max-w-fit ml-auto text-6xl font-bold text-left text-white sm:text-7xl md:text-8xl lg:text-9xl">
+              <h1 class="w-min max-w-fit ml-auto text-6xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-[#00ff95] sm:text-7xl md:text-8xl lg:text-9xl [text-shadow:_1px_0_1px_rgb(255_255_255_/_40%)]">
                 Louie Fitzpatrick
               </h1>
               <p class="ml-2 mt-6 text-lg leading-8 text-gray-300 text-center">
@@ -56,7 +56,7 @@ const Hero = () => {
             cx="50"
             cy="50"
             r="20%"
-            style="fill:white;stroke:purple;stroke-width:2"
+            style="fill:white;stroke:purple;stroke-width:2;"
           />
         </svg>
       </div>
