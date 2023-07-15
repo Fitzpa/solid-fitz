@@ -29,9 +29,8 @@
       .f {
         fill: url(#d);
       }
-
       .g {
-        fill: #58595b;
+        fill: #446b9e;
       }
     </style>
     <linearGradient id="a" x1="11.67" y1="73.36" x2="70.61" y2="44.72" gradientTransform="matrix(1, 0, 0, -1, 0, 73.4)" gradientUnits="userSpaceOnUse">
