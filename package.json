@@ -7,12 +7,20 @@
   },
   "type": "module",
   "devDependencies": {
+    "@solidjs/testing-library": "0.8.4",
+    "@testing-library/jest-dom": "5.16.5",
+    "@types/testing-library__jest-dom": "5.14.8",
+    "@vitest/coverage-c8": "0.33.0",
+    "@vitest/ui": "0.33.0",
     "autoprefixer": "10.4.14",
+    "axe": "^12.2.2",
+    "jsdom": "22.1.0",
     "postcss": "8.4.26",
     "solid-start-node": "0.2.26",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6",
-    "vite": "4.4.4"
+    "vite": "4.4.4",
+    "vitest": "0.33.0"
   },
   "dependencies": {
     "@solidjs/meta": "0.28.5",
@@ -24,6 +32,6 @@
     "undici": "5.22.1"
   },
   "engines": {
-    "node": ">=16"
+    "node": "16.17.1"
   }
 }
