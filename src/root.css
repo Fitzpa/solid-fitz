@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'BerkaLight';
-  src: url('fonts/BerkaLight9YGyn.eot');
-  src: url('fonts/BerkaLight9YGyn.eot') format('embedded-opentype'),
-       url('fonts/BerkaLight9YGyn.woff2') format('woff2'),
-       url('fonts/BerkaLight9YGyn.woff') format('woff'),
-       url('fonts/BerkaLight9YGyn.ttf') format('truetype'),
-       url('fonts/BerkaLight9YGyn.svg#BerkaLight9YGyn') format('svg');
+  src: url('/fonts/BerkaLight9YGyn.eot');
+  src: url('/fonts/BerkaLight9YGyn.eot') format('embedded-opentype'),
+       url('/fonts/BerkaLight9YGyn.woff2') format('woff2'),
+       url('/fonts/BerkaLight9YGyn.woff') format('woff'),
+       url('/fonts/BerkaLight9YGyn.ttf') format('truetype'),
+       url('/fonts/BerkaLight9YGyn.svg#BerkaLight9YGyn') format('svg');
 }
 
 @tailwind base;
