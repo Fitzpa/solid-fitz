@@ -113,7 +113,7 @@ export const techStack: Array<{name: string, src: string, link: string, mobileSr
   },
   {
     name: 'zustand',
-    src: '/tech-stack/zustand.png',
+    src: '/tech-stack/zustand-64b6db63b7bb9.webp',
     link: 'https://docs.pmnd.rs/zustand/getting-started/introduction',
   },
 ]

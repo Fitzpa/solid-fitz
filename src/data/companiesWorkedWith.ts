@@ -42,7 +42,7 @@ export const companiesWorkedWith = [
   {
     name: 'Phillips Distilling Company',
     href: '#',
-    logo: '/company-logos/phillips-logo.png',
+    logo: '/company-logos/phillips-logo.svg',
     width: '250',
     height: '93',
     lightBg: true,
