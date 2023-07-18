@@ -1,42 +1,5 @@
 import { Component, For } from 'solid-js'
-
-const works = [
-  {
-    name: 'When I Work',
-    role: 'Frontend Software Engineer',
-    path: 'when-i-work.png',
-  },
-  {
-    name: 'SPACE150',
-    role: 'Frontend Software Engineer',
-    path: 'space.png',
-  },
-  {
-    name: 'Red Wing Shoes',
-    role: 'Frontend Software Engineer',
-    path: 'red-wing.png',
-  },
-  {
-    name: 'Phillips Distilling Company',
-    role: 'Frontend Software Engineer',
-    path: 'cubist.png',
-  },
-  {
-    name: 'Phillips Distilling Company',
-    role: 'Frontend Software Engineer',
-    path: 'uv.png',
-  },
-  {
-    name: 'WP Engine',
-    role: 'Frontend Software Engineer',
-    path: 'wp-engine.png',
-  },
-  {
-    name: 'Nike X Tom Sachs',
-    role: 'Fullstack Software Engineer',
-    path: 'nikecraft.png',
-  },
-]
+import { workSectionData } from '../data/workSectionData'
 
 const WorkSection: Component<{}> = () => {
   // https://cubist.freezervodka.com/
@@ -49,7 +12,7 @@ const WorkSection: Component<{}> = () => {
       <ul
         role="list"
         class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <For each={works}>
+        <For each={workSectionData}>
           {(work) => (
             <li
               class="col-span-1 divide-y divide-gray-200 rounded-lg h-[290px] bg-cover bg-no-repeat bg-center"
