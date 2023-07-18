@@ -33,7 +33,11 @@
     "solid-icons": "1.0.11",
     "solid-js": "1.7.8",
     "solid-start": "0.2.26",
+    "solid-start-vercel": "0.2.26",
     "undici": "5.22.1"
   },
-  "engines": {"node":"18.x","pnpm":"8.6.8"}
+  "engines": {
+    "node": "18.x",
+    "pnpm": "8.6.8"
+  }
 }
