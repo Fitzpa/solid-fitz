@@ -16,7 +16,7 @@ const WorkSection: Component<{}> = () => {
           {(work) => (
             <li
               class="col-span-1 divide-y divide-gray-200 rounded-lg h-[290px] bg-cover bg-no-repeat bg-center"
-              style={`background-image: url('../../public/previous-work/${work.path}')`}>
+              style={`background-image: url('/previous-work/${work.path}')`}>
               <div class="flex w-full items-center justify-between space-x-6 p-6">
                 <div class="flex-1 truncate">
                   <div class="flex items-center space-x-3 opacity-0">
