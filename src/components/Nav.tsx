@@ -31,8 +31,8 @@ const Nav = () => {
               <span class="sr-only">Home</span>
               <img
                 class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt=""
+                src="/fitz-logo.svg"
+                alt="Louie Fitzpatrick Logo"
               />
             </A>
           </div>
@@ -59,13 +59,13 @@ const Nav = () => {
               </A>
             ))}
           </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          {/* <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <A
               href="#"
               class="text-sm font-semibold leading-6 text-white">
               Log in <span aria-hidden="true">&rarr;</span>
             </A>
-          </div>
+          </div> */}
         </nav>
         <Dialog
           as="div"
@@ -81,8 +81,8 @@ const Nav = () => {
                 <span class="sr-only">Your Company</span>
                 <img
                   class="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                  alt=""
+                  src="/fitz-logo.svg"
+                  alt="Louie Fitzpatrick Logo"
                 />
               </A>
               <button
@@ -107,13 +107,13 @@ const Nav = () => {
                     </A>
                   ))}
                 </div>
-                <div class="py-6">
+                {/* <div class="py-6">
                   <A
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800">
                     Log in
                   </A>
-                </div>
+                </div> */}
               </div>
             </div>
           </DialogPanel>
