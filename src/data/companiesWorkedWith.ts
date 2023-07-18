@@ -2,7 +2,7 @@ export const companiesWorkedWith = [
   {
     name: 'When I Work',
     href: '/',
-    logo: '/when-i-work-logo.svg',
+    logo: '/company-logos/when-i-work-logo.svg',
     width: '250',
     height: '64',
     lightBg: true,
@@ -10,7 +10,7 @@ export const companiesWorkedWith = [
   {
     name: 'SPACE150',
     href: '/about',
-    logo: '/space-logo.svg',
+    logo: '/company-logos/space-logo.svg',
     width: '250',
     height: '95',
     lightBg: true,
@@ -18,7 +18,7 @@ export const companiesWorkedWith = [
   {
     name: 'Nike',
     href: '#',
-    logo: '/nike-logo.svg',
+    logo: '/company-logos/nike-logo.svg',
     width: '250',
     height: '75',
     lightBg: true,
@@ -26,7 +26,7 @@ export const companiesWorkedWith = [
   {
     name: 'Cargill',
     href: '#',
-    logo: '/cargill-logo.svg',
+    logo: '/company-logos/cargill-logo.svg',
     width: '250',
     height: '81',
     lightBg: true,
@@ -34,7 +34,7 @@ export const companiesWorkedWith = [
   {
     name: '3M',
     href: '#',
-    logo: '/3M-logo.svg',
+    logo: '/company-logos/3M-logo.svg',
     width: '250',
     height: '95',
     lightBg: true,
@@ -42,7 +42,7 @@ export const companiesWorkedWith = [
   {
     name: 'Phillips Distilling Company',
     href: '#',
-    logo: '/phillips-logo.png',
+    logo: '/company-logos/phillips-logo.png',
     width: '250',
     height: '93',
     lightBg: true,
@@ -50,7 +50,7 @@ export const companiesWorkedWith = [
   {
     name: 'Tom Sachs',
     href: '#',
-    logo: '/tom-sachs-logo.svg',
+    logo: '/company-logos/tom-sachs-logo.svg',
     width: '250',
     height: '64',
     lightBg: true,
@@ -58,7 +58,7 @@ export const companiesWorkedWith = [
   {
     name: 'WP Engine',
     href: '#',
-    logo: '/WPE-LOGO-H-Default.svg',
+    logo: '/company-logos/WPE-LOGO-H-Default.svg',
     width: '250',
     height: '95',
     lightBg: true,
@@ -66,7 +66,7 @@ export const companiesWorkedWith = [
   {
     name: 'Science Museum of Minnesota',
     href: '#',
-    logo: '/science-museum-of-minnesota.svg',
+    logo: '/company-logos/science-museum-of-minnesota.svg',
     width: '250',
     height: '95',
     lightBg: true,
